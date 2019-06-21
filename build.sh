@@ -1,1 +1,1 @@
-docker build -t ssh-tunnel .
+docker build -t docker-host-shell-tunnel .
