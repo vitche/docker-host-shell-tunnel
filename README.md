@@ -4,7 +4,7 @@
 ```shell
 sudo ./run.sh
 ```
-This starts the host BASH worker and an RPC-bound Docker container listening to port 1801 for shell requests.
+This starts the host BASH worker and an RPC-bound Docker container listening on port 1801 for shell requests.
 
 ## To test a tunnel on a local (Docker host) machine
 ```shell
