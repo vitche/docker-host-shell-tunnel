@@ -7,8 +7,8 @@ This project achieves the following goals:
 - Returns respective SHELL request execution results to the TCP port within the Docker network.
 
 This is intended to be used for:
-- Breaking from the isolated Docker environment into the Docker host machine;
-- Therefore making the Docker host SHELL available within this isolated environment.
+- Breaking from the isolated Docker environment into the Docker Host machine;
+- Therefore making the Docker Host SHELL available within this isolated environment.
 
 ## To start a tunnel
 ```shell
