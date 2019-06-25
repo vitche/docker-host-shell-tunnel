@@ -8,6 +8,6 @@ rm $INPUT_FIFO $OUTPUT_FIFO
 # Start the FIFO worker to process incoming command requests
 touch $INPUT_FIFO $OUTPUT_FIFO
 chown $USER $INPUT_FIFO $OUTPUT_FIFO
-./worker.sh $INPUT_FIFO $OUTPUT_FIFO
+./worker.sh $INPUT_FIFO $OUTPUT_FIFO &
 
-docker run --volume $INPUT_FIFO:$INPUT_FIFO --volume $OUTPUT_FIFO:$OUTPUT_FIFO docker-host-shell-tunnel
+# docker run -dit --restart always --name docker-host-shell-tunnel --volume $INPUT_FIFO:$INPUT_FIFO --volume $OUTPUT_FIFO:$OUTPUT_FIFO docker-host-shell-tunnel
