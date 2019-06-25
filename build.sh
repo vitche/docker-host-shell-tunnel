@@ -1,1 +1,1 @@
-docker build -t docker-host-shell-tunnel .
+docker build -t vitche/docker-host-shell-tunnel .
