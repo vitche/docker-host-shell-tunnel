@@ -1,5 +1,15 @@
 # docker-host-shell-tunnel
 
+This project achieves the following goals:
+- Listens to incoming SHELL requests on a container TCP port within the Docker network;
+- Passes these SHELL requests via the RPC buffer to the Docker Host machine;
+- Executes these SHELL requests;
+- Returns respective SHELL request execution results to the TCP port within the Docker network.
+
+This is intended to be used for:
+- Breaking from the isolated Docker environment into the Docker host machine;
+- Therefore making the Docker host SHELL available within this isolated environment.
+
 ## To start a tunnel
 ```shell
 sudo ./run.sh
