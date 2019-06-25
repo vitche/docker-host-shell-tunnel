@@ -15,4 +15,11 @@ Or
 ```shell
 ./test.sh write
 ```
-to write the "ls" command to the RPC buffer.
+to write the "ls" command to the RPC buffer. This command will be executed and the result will be available to the reading part immediately.
+
+## To test a tunnel through Docker / TCP IP
+```shell
+netcat localhost 1801
+```
+This will display the result of the previous executed command or set of commands.
+And anything ending with a newline what is sent to the input will be executed at the Docker host through the RPC tunnel.
