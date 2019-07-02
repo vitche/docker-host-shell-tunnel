@@ -33,3 +33,8 @@ netcat localhost 1801
 ```
 This will display the result of the previous executed command or set of commands.
 And anything ending with a newline what is sent to the input will be executed at the Docker host through the RPC tunnel.
+
+## Docker image
+```shell
+docker pull vitche/docker-host-shell-tunnel
+```
